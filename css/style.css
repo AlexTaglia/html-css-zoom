@@ -8,15 +8,23 @@
     display: flex;
     height: 100vh;
     flex-direction: column;
-
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     color: white;
 
 }
 
-.green{
+.green-text{
     color: yellowgreen;
+}
+
+.red-text{
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 nav{
@@ -78,9 +86,6 @@ nav .speaker-view, nav .zoom{
     padding: 0 10px;
 }
 
-.menu-left, .menu-center, .menu-right{
-}
-
 [class^="menu-"] i{
     display: block;
     text-align: center;
@@ -89,7 +94,7 @@ nav .speaker-view, nav .zoom{
 }
 
 .menu-left, .menu-right{
-    width: 200px;
+    width: 250px;
 }
 
 .menu-center{
@@ -97,11 +102,61 @@ nav .speaker-view, nav .zoom{
 }
 
 .menu-right {
-    color: red;
     background-color: rgb(99, 97, 97);
     line-height: 80px;
 }
 
 .persona-1{
     background-image: url(../img/dottore1.jpg);
+}
+
+.persona-2{
+    background-image: url(../img/dottore2.jpg);
+}
+
+.persona-3{
+    background-image: url(../img/dottore3.jpg);
+}
+
+.persona-4{
+    background-image: url(../img/dottore4.jpg);
+}
+
+.persona-5{
+    background-image: url(../img/dottore5.jpg);
+}
+
+.persona-6{
+    background-image: url(../img/dottore6.jpg);
+}
+
+.persona-7{
+    background-image: url(../img/dottore7.jpg);
+}
+
+.persona-8{
+    background-image: url(../img/dottore8.jpg);
+}
+.persona-9{
+    background-image: url(../img/dottore9.jpg);
+}
+.persona-10{
+    background-image: url(../img/dottore10.jpg);
+}
+.persona-11{
+    background-image: url(../img/dottore11.jpg);
+}
+.persona-12{
+    background-image: url(../img/dottore12.jpg);
+}
+.persona-13{
+    background-image: url(../img/dottore13.jpg);
+}
+.persona-14{
+    background-image: url(../img/dottore14.jpg);
+}
+
+.button{
+    background-color: rgba(99, 97, 97, 0.637);
+    border-style: none;
 }
