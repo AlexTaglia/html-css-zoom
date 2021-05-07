@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+
+}
+
+.green{
+    color: yellowgreen;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+}
+
+nav .speaker-view, nav .zoom{
+    font-size: 15px;
+    font-weight: normal;
+    background-color: rgb(99, 97, 97);
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+.main{
+    background-color: black;
+    flex-grow: 1;
+}
+
+.partecipanti{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+[class^=persona-]{
+    width: 300px;
+    height: 200px;
+    background-color: royalblue;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    margin: 25px 5px;
+}
+
+[class^=persona-] .name{
+    background-color: rgba(99, 97, 97, 0.637);
+    padding: 5px 10px;
+}
+
+.nav-container {
+    background-color: rgb(68, 68, 68);
+    display: flex;
+}
+
+.nav-container ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container ul li{
+    padding: 0 10px;
+}
+
+.menu-left, .menu-center, .menu-right{
+    min-height: 80px;
+}
+
+[class^="menu-"] i{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.menu-left, .menu-right{
+    width: 200px;
+}
+
+.menu-center{
+    flex-grow: 1;
+}
+
+.menu-right {
+    color: red;
+    background-color: rgb(99, 97, 97);
+}
+
+.persona-1{
+    background-image: url(../img/dottore1.jpg);
+}
