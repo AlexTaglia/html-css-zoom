@@ -169,3 +169,7 @@ a{
     background-color: rgba(99, 97, 97, 0.637);
     border-style: none;
 }
+
+.parola{
+    border: 3px solid rgba(255, 255, 0, 0.815);
+}
