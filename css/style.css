@@ -4,16 +4,6 @@
     padding: 0;
 }
 
-.container {
-    display: flex;
-    height: 100vh;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: white;
-
-}
-
 .green-text{
     color: yellowgreen;
 }
@@ -27,15 +17,28 @@ a{
     color: white;
 }
 
-nav{
+.container {
     display: flex;
-    justify-content: flex-end;
-    background-color: black;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
 }
 
-nav .speaker-view, nav .zoom{
-    font-size: 15px;
+.nav-top, .main{
+    background-color: black;
+
+}
+
+.nav-top{
+    display: flex;
+    justify-content: flex-end;
     font-weight: normal;
+}
+
+.nav-top .speaker-view, .nav-top .zoom{
     background-color: rgb(99, 97, 97);
     padding: 5px 10px;
     margin: 5px;
@@ -43,7 +46,6 @@ nav .speaker-view, nav .zoom{
 }
 
 .main{
-    background-color: black;
     flex-grow: 1;
 }
 
@@ -54,14 +56,13 @@ nav .speaker-view, nav .zoom{
 }
 
 [class^=persona-]{
-    width: 300px;
-    height: 200px;
-    background-color: royalblue;
+    width: 250px;
+    height: 150px;
+    margin: 25px 5px;
     display: flex;
     align-items: flex-end;
     background-size: cover;
     background-position: center;
-    margin: 25px 5px;
 }
 
 [class^=persona-] .name{
@@ -73,7 +74,7 @@ nav .speaker-view, nav .zoom{
     background-color: rgb(68, 68, 68);
     display: flex;
     min-height: 80px;
-    align-items: center;
+    align-items: center; /*allineamento verticale*/
 }
 
 .nav-container ul{
@@ -89,12 +90,12 @@ nav .speaker-view, nav .zoom{
 [class^="menu-"] i{
     display: block;
     text-align: center;
+    padding-bottom: 10px;
     font-size: 20px;
-    padding-bottom: 5px;
 }
 
 .menu-left, .menu-right{
-    width: 250px;
+    flex-basis: auto;
 }
 
 .menu-center{
@@ -104,6 +105,14 @@ nav .speaker-view, nav .zoom{
 .menu-right {
     background-color: rgb(99, 97, 97);
     line-height: 80px;
+}
+
+.menu-right ul li{
+    padding: 0 25px;
+}
+
+.fa-angle-up{
+    padding-top: 10px;
 }
 
 .persona-1{
